@@ -1,0 +1,7 @@
+@layer reset;
+
+/* The @stylex directive is used by the StyleX PostCSS plugin.
+ * It will be replaced with generated CSS at build time.
+ */
+/* @stylex-injection-point */
+@stylex;

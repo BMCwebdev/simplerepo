@@ -1,0 +1,290 @@
+@layer reset {
+  :where(*) {
+    box-sizing: border-box;
+  }
+  :where(*:before, *:after) {
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+  }
+  :where(html) {
+    -moz-tab-size: 2;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+    background-color: var(--s-color-neutral-0);
+    color: var(--s-color-text);
+    font-family: var(--s-font-family-sans);
+    font-feature-settings: normal;
+    font-size: var(--s-font-size-200);
+    font-style: normal;
+    font-variation-settings: normal;
+    font-weight: var(--s-font-weight-400);
+    line-height: var(--s-font-line-height-200);
+    tab-size: 2;
+    text-align: left;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  :where(body) {
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0;
+    text-align: inherit;
+  }
+  /* conflicting with Stitch. */
+  /* :where(hr) {
+    height: 0;
+    color: inherit;
+    border-top-width: 1px;
+  } */
+  :where(abbr:where([title])) {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+  }
+  :where(h1) {
+    font-size: var(--s-font-size-500);
+    line-height: var(--s-font-line-height-400);
+    font-weight: var(--s-font-weight-500);
+    letter-spacing: var(--s-font-letter-spacing-0);
+  }
+  @media screen and (min-width: 64rem) {
+    :where(h1) {
+      font-size: var(--s-font-size-600);
+      line-height: var(--s-font-line-height-500);
+      font-weight: var(--s-font-weight-400);
+    }
+  }
+  :where(h2) {
+    font-size: var(--s-font-size-400);
+    line-height: var(--s-font-line-height-300);
+    font-weight: var(--s-font-weight-500);
+    letter-spacing: var(--s-font-letter-spacing-0);
+  }
+  @media screen and (min-width: 64rem) {
+    :where(h2) {
+      font-size: var(--s-font-size-500);
+      line-height: var(--s-font-line-height-400);
+      font-weight: var(--s-font-weight-400);
+    }
+  }
+  :where(h3) {
+    font-size: var(--s-font-size-300);
+    line-height: var(--s-font-line-height-200);
+    font-weight: var(--s-font-weight-600);
+    letter-spacing: var(--s-font-letter-spacing-0);
+  }
+  @media screen and (min-width: 64rem) {
+    :where(h3) {
+      font-size: var(--s-font-size-400);
+      line-height: var(--s-font-line-height-300);
+      font-weight: var(--s-font-weight-500);
+    }
+  }
+  :where(h4) {
+    font-size: var(--s-font-size-200);
+    line-height: var(--s-font-line-height-100);
+    font-weight: var(--s-font-weight-700);
+    letter-spacing: var(--s-font-letter-spacing-100);
+  }
+  @media screen and (min-width: 64rem) {
+    :where(h4) {
+      font-size: var(--s-font-size-300);
+      line-height: var(--s-font-line-height-200);
+      font-weight: var(--s-font-weight-600);
+      letter-spacing: var(--s-font-letter-spacing-100);
+    }
+  }
+  :where(h5) {
+    font-size: var(--s-font-size-100);
+    line-height: var(--s-font-line-height-50);
+    font-weight: var(--s-font-weight-700);
+    letter-spacing: var(--s-font-letter-spacing-200);
+  }
+  @media screen and (min-width: 64rem) {
+    :where(h5) {
+      font-size: var(--s-font-size-200);
+      line-height: var(--s-font-line-height-100);
+      font-weight: var(--s-font-weight-600);
+      letter-spacing: var(--s-font-letter-spacing-100);
+    }
+  }
+  :where(h6) {
+    font-size: var(--s-font-size-100);
+    line-height: var(--s-font-line-height-50);
+    font-weight: var(--s-font-weight-700);
+    letter-spacing: var(--s-font-letter-spacing-200);
+  }
+  :where(a) {
+    /* was conflicting with Stitch link hover styles */
+    /* background-color: transparent; */
+    color: var(--s-color-link);
+    text-decoration: none;
+  }
+  :where(a):not([role='menuitem']) {
+    font-weight: var(--s-font-weight-600);
+  }
+  :where(a:where(:hover)),
+  :where(a:where(:active)) {
+    color: var(--s-color-link-pressed);
+    text-decoration: none;
+  }
+  :where(a:where(:disabled)) {
+    color: var(--s-color-text-disabled);
+    text-decoration: none;
+  }
+  :where(a:where(:focus-visible)) {
+    outline: var(--s-border-width-md) solid var(--s-color-border-focused);
+    outline-offset: var(--s-space-25);
+    text-decoration: none;
+  }
+  :where(button) {
+    font-family: inherit;
+  }
+  :where(b, strong) {
+    font-weight: bolder;
+  }
+  :where(code, kbd, samp, pre) {
+    font-family:
+      ui-monospace,
+      SFMono-Regular,
+      Menlo,
+      Monaco,
+      Consolas,
+      Liberation Mono,
+      Courier New,
+      monospace;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    font-size: 1em;
+  }
+  :where(small) {
+    font-size: var(--s-font-size-50);
+  }
+  :where(sub, sup) {
+    font-size: var(--s-font-size-50);
+    line-height: var(--s-font-line-height-50);
+    position: relative;
+    vertical-align: baseline;
+  }
+  :where(sub) {
+    bottom: -0.25em;
+  }
+  :where(sup) {
+    top: -0.5em;
+  }
+  :where(table) {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+  }
+  :where(table th, table td) {
+    padding: 0;
+  }
+  /* button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  button,
+  select {
+    text-transform: none;
+  }
+  button,
+  [type='button'],
+  [type='reset'],
+  [type='submit'] {
+    -webkit-appearance: button;
+    background-color: transparent;
+    background-image: none;
+  } */
+  /* :where(:-moz-focusring) {
+    outline: auto;
+  } */
+  :where(:-moz-ui-invalid) {
+    box-shadow: none;
+  }
+  :where(progress) {
+    vertical-align: baseline;
+  }
+  :where(::-webkit-inner-spin-button, ::-webkit-outer-spin-button) {
+    height: auto;
+  }
+  :where([type='search']) {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+  }
+  :where(::-webkit-search-decoration) {
+    -webkit-appearance: none;
+  }
+  :where(::-webkit-file-upload-button) {
+    -webkit-appearance: button;
+    font: inherit;
+  }
+  :where(summary) {
+    display: list-item;
+  }
+  :where(blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre) {
+    margin: 0;
+  }
+  :where(fieldset) {
+    margin: 0;
+    padding: 0;
+  }
+  :where(legend) {
+    padding: 0;
+  }
+  :where(ol, ul, menu) {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  :where(dialog) {
+    padding: 0;
+  }
+  :where(textarea) {
+    resize: vertical;
+  }
+  :where(input::placeholder, textarea::placeholder) {
+    opacity: 1;
+    color: #9ca3af;
+  }
+  :where(button, [role='button']) {
+    cursor: pointer;
+  }
+  :where(:disabled) {
+    cursor: default;
+  }
+  :where(img, svg, video, canvas, audio, iframe, embed, object) {
+    display: block;
+    vertical-align: middle;
+  }
+  :where(img, video) {
+    max-width: 100%;
+    height: auto;
+  }
+  :where([hidden]) {
+    display: none;
+  }
+
+  .react-aria-Dialog {
+    outline: none;
+  }
+}
