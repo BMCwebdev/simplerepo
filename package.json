@@ -28,6 +28,11 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/free-regular-svg-icons": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@react-aria/form": "^3.0.15",
     "@react-aria/label": "^3.7.17",
     "@react-aria/toast": "^3.0.2",

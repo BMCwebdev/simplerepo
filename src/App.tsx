@@ -1,10 +1,14 @@
 import { Keyboard } from './components/Keyboard';
+import { Icon } from './components/Icon';
 
 function App() {
   return (
-    <Keyboard outline>
-      <div>Hello</div>
-    </Keyboard>
+    <>
+      <Icon name="house" />
+      <Keyboard outline>
+        <div>Hello</div>
+      </Keyboard>
+    </>
   );
 }
 

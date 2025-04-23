@@ -1,7 +1,7 @@
 import { themes } from '@storybook/theming';
 import '../src/index.css';
 import '../src/stylex.css';
-import './global-styles.css';
+// import './global-styles.css';
 
 /** @type { import('@storybook/react').Preview } */
 const preview = {

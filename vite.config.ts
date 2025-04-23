@@ -80,6 +80,8 @@ export default defineConfig(({ mode }) => {
         external: [
           'react',
           'react-dom',
+          'react/jsx-runtime',
+          'react/jsx-dev-runtime',
           'react-aria-components',
           '@stylexjs/stylex',
           'vite-plugin-stylex',
@@ -88,6 +90,8 @@ export default defineConfig(({ mode }) => {
           globals: {
             react: 'React',
             'react-dom': 'ReactDOM',
+            'react/jsx-runtime': 'jsxRuntime',
+            'react/jsx-dev-runtime': 'jsxDevRuntime',
             'react-aria-components': 'ReactAriaComponents',
             '@react-aria/toast': 'ReactAriaToast',
             '@stylexjs/stylex': 'stylex',

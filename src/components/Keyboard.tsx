@@ -4,7 +4,7 @@ import * as stylex from '@stylexjs/stylex';
 
 const kbdStyles = stylex.create({
   base: {
-    color: 'red',
+    color: 'green',
     fontSize: '0.75rem',
     letterSpacing: '0.1em',
   },
